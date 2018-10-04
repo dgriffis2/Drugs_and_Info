@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Drugs and Info</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:200,300,400,500" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav>
+            <div id="nav-container">
+                <div id="nav-left">
+                    <h2>Drugs and Info</h2>
+                </div>
+                <div id="nav-right">
+                    <ul>
+                        <li>
+                            <a id="contactLink" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="contact">
+                <div id="contact-container">
+                    <form id="contactForm" action="submit" autocomplete="off">
+                        <p>Name</p>
+                        <input id="userName" type="text" name="name" placeholder="John Doe" autocomplete="off">
+                        <p>Email</p>
+                        <input id="userEmail" type="email" name="email" placeholder="example@email.com" autocomplete="off">
+                        <p>Message</p>
+                        <textarea id="userMessage" type="text" name="message" placeholder="Message..." autocomplete="off"></textarea>
+                        <br>
+                        <button id="submitBtn">Send Message</button>
+                    </form>
+
+                </div>
+                <p id="thanks">Thanks!</p>
+
+            </div>
+        </nav>
+        <section id="hero">
+            <div id="hero-container">
+                <div id="hero-left">
+                    <h1>Have questions about a medication?</h1>
+                    <p>Look it up here.</p>
+                    <!-- search -->
+                    <div id="formDiv">
+                        <form id="search-form" action="submit">
+                            <input id="userSearch" type="text" placeholder="Ibuprofen" autocomplete="off">
+                            <button id="searchBtn">Search</button>
+                            <!-- <div id="icon"><a href="#"><i class="material-icons">search</i></a></span> -->
+                        </form>
+                    </div>
+                </div>
+                <div id="hero-right">
+                    <img src="assets/img/pill.png" alt="Medicine">
+                </div>
+            </div>
+        </section>
+        <section id="articles">
+            <div id="articles-container" class="wrap">
+                <h3>New York Times Articles</h3>
+                <div id="articles-wrap">
+                    <div id="card-1" class="card">
+                    <img class="loadingCard" src="assets/img/oval.svg" alt="loading">
+                        <h4 class="cardContent" id="header-1"></h4>
+                        <p class="cardContent" id="para-1"></p>
+                    </div>
+                    <div id="card-2" class="card">
+                    <img class="loadingCard" src="assets/img/oval.svg" alt="loading">
+                        <h4 class="cardContent" id="header-2"></h4>
+                        <p class="cardContent" id="para-2"></p>
+                    </div>
+                    <div id="card-3" class="card">
+                    <img class="loadingCard" src="assets/img/oval.svg" alt="loading">
+                        <h4 class="cardContent" id="header-3"></h4>
+                        <p class="cardContent" id="para-3"></p>
+                    </div>
+                    <div id="card-4" class="card">
+                    <img class="loadingCard" src="assets/img/oval.svg" alt="loading">
+                        <h4 class="cardContent" id="header-4"></h4>
+                        <p class="cardContent" id="para-4"></p>
+                    </div>
+                    <div id="card-5" class="card">
+                    <img class="loadingCard" src="assets/img/oval.svg" alt="loading">
+                        <h4 class="cardContent" id="header-5"></h4>
+                        <p class="cardContent" id="para-5"></p>
+                    </div>
+                    <div id="card-6" class="card">
+                    <img class="loadingCard" src="assets/img/oval.svg" alt="loading">
+                        <h4 class="cardContent" id="header-6"></h4>
+                        <p class="cardContent" id="para-6"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="push"></div>
+    </div>
+    <footer>
+        <p>© 2018, Drugs and Info</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+        crossorigin="anonymous"></script>
+    <script src="assets/js/style.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

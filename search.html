@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Drugs and Info</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:200,300,400,500" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/jqueryUi.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/styleSearch.css">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav>
+            <div id="nav-container">
+                <div id="nav-left">
+                    <h2>Drugs and Info</h2>
+                </div>
+                <div id="nav-right">
+                    <ul>
+                        <li>
+                            <a id="contactLink" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="contact">
+                <div id="contact-container">
+                    <form id="contactForm" action="submit" autocomplete="off">
+                        <p>Name</p>
+                        <input id="userName" type="text" placeholder="John Doe" autocomplete="off">
+                        <p>Email</p>
+                        <input id="userEmail" type="text" placeholder="example@email.com" autocomplete="off">
+                        <p>Message</p>
+                        <textarea id="userMessage" type="text" placeholder="Message..." autocomplete="off"></textarea>
+                        <br>
+                        <button id="submitBtn">Send Message</button>
+
+                    </form>
+
+                </div>
+                <p id="thanks">Thanks!</p>
+
+            </div>
+        </nav>
+        <section id="search-section">
+            <div id="search-section-container">
+                <div id="formDiv">
+                    <form id="search-page" action="submit">
+                        <input id="userSearch" type="text" placeholder="Ibuprofen" autocomplete="off">
+                        <button id="searchBtn">Search</button>
+                    </form>
+                </div>
+                <h3 id="ResultH3">Search Results:</h3>
+                <span id="failResult"></span>
+                <div id="searchResults">
+                        <img class="loadingSearch" src="assets/img/oval.svg" alt="loading">
+                    <!-- <div class="result">
+                        <h3 class="resultHeading">
+                            <span class="resultBrand">Heroin </span>(<span class="resultGeneric">Generic Name</span>)</h3>
+                        
+                        <div class="accordion">
+                            <h3>Side Effects</h3>
+                            <div class="resultSideEffects">Nausea, Weakness, Death</div>
+                            <h3>Reactions</h3>
+                            <div class="resultsReactions">Reacts, to, Jesus</div>
+                            <h3>Precautions</h3>
+                            <div class="resultsPrecautions">Don't take this drug with alcohol or while reading the bible</div>
+                            <h3>How To Take this Drug</h3>
+                            <div class="resultsDirections">Don't do it</div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+        <div class="push"></div>
+    </div>
+    <footer>
+        <p>© 2018, Drugs and Info</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+        crossorigin="anonymous"></script>
+    <script src="assets/js/styleSearch.js"></script>
+    <script src="assets/js/ajax.js"></script>
+</body>
+
+</html>
